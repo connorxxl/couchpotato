@@ -22,4 +22,4 @@ EXPOSE 5050
 
 WORKDIR /opt/couchpotato
 
-CMD ["/usr/bin/python", "CouchPotato.py", "--daemon", "--pid_file=/var/run/couchpotato.pid", "--data_dir", "/config"]
+CMD ["/usr/bin/python", "CouchPotato.py", "--daemon", "--pid_file=/var/run/couchpotato.pid", "--data_dir=/config"]
