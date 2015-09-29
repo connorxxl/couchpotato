@@ -3,7 +3,7 @@ FROM ubuntu:trusty
 MAINTAINER connorxxl <christian.flaig@gmail.com>
 
 RUN apt-get -q update && \
-    apt-get install -y python-pip build-essential python-dev libffi-dev libssl-dev && \
+    apt-get install -y python-pip build-essential python-dev libffi-dev libssl-dev git && \
     pip install --upgrade cryptography pyopenssl ndg-httpsclient pyasn1 && \
     git clone https://github.com/RuudBurger/CouchPotatoServer.git /opt/couchpotato && \
     apt-get autoremove && \
