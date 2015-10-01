@@ -23,4 +23,4 @@ EXPOSE 5050
 WORKDIR /opt/couchpotato
 
 ENTRYPOINT ["python", "CouchPotato.py"]
-CMD ["--data_dir=/config"]
+CMD ["--data_dir=/config", "--console_log"]
